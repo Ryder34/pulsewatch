@@ -1,0 +1,21 @@
+# dependencies and build output
+node_modules/
+dist/
+build/
+coverage/
+
+# secrets: never commit real env files, only the example
+.env
+.env.*
+!.env.example
+*.pem
+
+# logs and editor/OS noise
+*.log
+.DS_Store
+.idea/
+
+# Terraform (Phase 11): state can contain secrets
+.terraform/
+*.tfstate
+*.tfstate.*
